@@ -29,7 +29,7 @@ public class stepDefination extends Setup {
 			url = "http://demo.guru99.com/test/newtours/register.php";
 			break;
 		case "stg":
-			url = "https://www.google.com/";
+			url = "http://demo.guru99.com/test/newtours/register.php";
 			break;
 		case "prd":
 			url = "http://demo.guru99.com/test/newtours/register.php";
@@ -37,7 +37,7 @@ public class stepDefination extends Setup {
 			break;
 
 		}
-		//driver.get(url);
+		driver.get(url);
 	}
 
 	@After

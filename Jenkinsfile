@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Test') {
             steps {
-                sh 'clean test -Dcucumber.options="src/test/java/features --tags @Register"' 
+                sh 'mvn clean test -Dcucumber.options="src/test/java/features --tags @Register"' 
             }
         }
                 stage ('Cucumber Reports') {

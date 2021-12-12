@@ -1,34 +1,16 @@
-pipeline{
-
+pipeline {
     agent any
-
+    tools {
+        maven '3.4.8'
+        jdk 'Java1.8'
+    }
     stages {
-
-        stage ('Compile Stage') {
-
+        stage ('Test') {
             steps {
-
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn clean install'
-
-                }
-
+                sh 'clean test -Dcucumber.options="src/test/java/features --tags '@Register'"' 
             }
         }
-    stage ('Test Stage') {
-
-            steps {
-
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn test'
-
-                }
-
-            }
-        }
-
-
-        stage ('Cucumber Reports') {
+                stage ('Cucumber Reports') {
 
             steps {
                 cucumber buildStatus: "UNSTABLE",
@@ -38,7 +20,7 @@ pipeline{
             }
 
         }
-
     }
-
+    
+    
 }

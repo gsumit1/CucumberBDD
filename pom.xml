@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.qaworld</groupId>
-	<artifactId>Cucumber_BDD_Demo</artifactId>
+	<artifactId>CucumberBDD</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>Cucumber_BDD_Demo</name>
+	<name>CucumberBDD</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 

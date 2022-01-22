@@ -1,4 +1,4 @@
-package stepDef;
+package stepDefination.registration;
 
 import static org.junit.Assert.assertTrue;
 

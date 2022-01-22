@@ -12,3 +12,12 @@ Feature: Login feature test
   Scenario: Login2
     Given I visit "/login"
    
+   
+
+ @Demo
+    Scenario: Open Google
+    Given I am on the Google page
+    When I search "10.5"
+    Then I should see search result
+
+ 

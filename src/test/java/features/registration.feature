@@ -21,12 +21,3 @@ Feature: Login feature test
       | Ghosh    | IBM@123  | IBM@123          |
 
 
-	
-   
-   @Demo
-    Scenario: Open Google
-    Given I am on the Google page
-    When I search "10.5"
-    Then I should see search result
-
-

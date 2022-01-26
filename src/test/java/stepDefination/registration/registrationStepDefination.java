@@ -52,11 +52,7 @@ public class registrationStepDefination extends Setup {
 		userDetails.put("Confirm Password", string3);
 		reg.register_user(userDetails);
 	
-	    
-	    
-	    
-	    
-	    
+	  
 	    
 	}
 	

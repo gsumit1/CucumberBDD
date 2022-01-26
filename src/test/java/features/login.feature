@@ -20,4 +20,11 @@ Feature: Login feature test
     When I search "10.5"
     Then I should see search result
 
- 
+  @Smoke1 
+  Scenario: Login
+    Given I visit demosite
+    When I login as guest user
+    And I select t-shirt
+    And I checkout out the item
+    And I payout with credit card
+    Then the order should be successfully checkout

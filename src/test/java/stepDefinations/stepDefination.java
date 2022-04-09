@@ -1,7 +1,4 @@
-package stepDef;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+package stepDefinations;
 
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;

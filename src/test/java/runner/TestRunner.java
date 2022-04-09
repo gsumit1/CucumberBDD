@@ -1,7 +1,5 @@
 package runner;
 
-import java.io.File;
-
 import org.junit.AfterClass;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -13,7 +11,7 @@ import org.junit.runner.RunWith;
 		"html:target/cucumber-reports.html", "json:target/cucumber.json",
 		}, tags = "@Demo")
 
-public class TestRunner1 {
+public class TestRunner {
 	@AfterClass
 	public static void sendEmail() {
 

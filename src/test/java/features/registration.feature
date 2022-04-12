@@ -1,6 +1,7 @@
+@Registration
 Feature: Login feature test
 
-  @Register
+  @Register @smoke @Regression
   Scenario: Register with username & passowrd
     Given I am on travel portal
     When I register with details
@@ -20,9 +21,6 @@ Feature: Login feature test
       | Sumit    | IBM@123  | IBM@123          |
       | Ghosh    | IBM@123  | IBM@123          |
 
-
-	
-   
    @Demo
     Scenario: Open Google
     Given I am on the Google page

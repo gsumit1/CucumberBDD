@@ -26,11 +26,18 @@ public class HomePage extends Setup {
 	@FindBy(xpath="//a")
 	public List<WebElement> all;
 	
+	@FindBy(xpath = "//a[contains(.,'Flights')]")
+	public WebElement flight_lnk;
 	
 	
 	public void clickOnRegistration() {
-		System.out.println(all.size());
 		rEGISTER.click();
+	}
+	
+	
+	public void clickOnFlight() {
+	
+		flight_lnk.click();
 	}
 
 }
